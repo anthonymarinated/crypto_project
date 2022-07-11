@@ -2,6 +2,8 @@ import React , {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import './styles.css';
+import FoodPicture from './picturecomponent';
+import 'regenerator-runtime/runtime';
 
 const App = () => {
     //fetch /api/coins and display data
@@ -41,7 +43,8 @@ const App = () => {
         <button onClick={top20}>Click here for top 20!</button>
         <button onClick={top100}>Click here for top 100!</button>
         <button onClick={inactive}>Click here for inactive coins!</button>
-        { state && <div>{state.map( d => <div key={d.id}>{d.name}, {d.symbol}, {d.rank}</div>)}</div>}
+        { state && <div>{state.map( d => <div key={d.id}>{d.rank} - {d.name}, {d.symbol}</div>)}</div>}
+        <FoodPicture/>
     </div>
     )
 }

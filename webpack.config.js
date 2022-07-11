@@ -7,7 +7,8 @@ module.exports = {
     mode: 'development',
     entry: [
         //entry point of app
-        './client/index.js'
+        'regenerator-runtime/runtime.js','./client/index.js',
+
     ],
     output: {
         path: path.resolve(__dirname, 'build'),
