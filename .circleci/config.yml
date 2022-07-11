@@ -5,8 +5,8 @@ orbs:
 
 jobs:
   build_and_test: crypto31 # this can be any name you choose
-    executor: node/default # use the default executor defined within the orb
-    steps:
+  executor: node/default
+  steps:
       - checkout
       - node/install-packages:
           pkg-manager: npm
@@ -20,5 +20,5 @@ jobs:
 
 workflows:
   build_test_deploy: crypto31 # this can be any name you choose
-    jobs:
+  jobs:
       - build_and_test
