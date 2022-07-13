@@ -13,7 +13,7 @@ const FoodPicture = () => {
     const json = await res.json();
     setPicture(json);
   };
-  console.log(pictures);
+  // console.log(pictures);
   useEffect(() => {
     try {
       fetchImage();
