@@ -29,15 +29,15 @@ const FoodPicture = () => {
     return (
       <div>
         {pictures[randomIdx] == "http://www.fakeurl.io/fakeimage1.jpeg" ? (
-          <div>'Not Found'</div>
+          <div>Not Found</div>
         ) : pictures[randomIdx] == "http://www.fakeurl.io/fakeimage2.jpeg" ? (
-          <div>'Not Found'</div>
+          <div>Not Found</div>
         ) : pictures[randomIdx] == "http://www.fakeurl.io/fakeimage3.jpeg" ? (
-          <div>'Not Found'</div>
+          <div>Not Found</div>
         ) : pictures[randomIdx] == "http://www.fakeurl.io/fakeimage4.jpeg" ? (
-          <div>'Not Found'</div>
+          <div>Not Found</div>
         ) : pictures[randomIdx] == "http://www.fakeurl.io/fakeimage5.jpeg" ? (
-          <div>'Not Found'</div>
+          <div>Not Found</div>
         ) : (
           <img src={pictures[randomIdx]} key={pictures} />
         )}
