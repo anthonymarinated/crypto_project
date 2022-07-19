@@ -7,3 +7,8 @@ describe('App', () => {
       render(<App />);
     });
   });
+
+test('render h1 element', () => {
+    render(<App />);
+    expect(screen.getByText('Crypto!!')).toBeInTheDocument();
+});

@@ -3,7 +3,10 @@ const app = express();
 const path = require("path");
 const axios = require("axios");
 const PORT = 3000;
+
 //node ./server/server.js
+//npm run build as well
+
 // statically serve everything in the build folder on the route '/build'
 app.use("/build", express.static(path.join(__dirname, "../build")));
 
